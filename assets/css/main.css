@@ -2388,8 +2388,8 @@ ul.contact {
 ul.contact li {
   text-decoration: none;
   border-top: solid 1px rgba(210, 215, 217, 0.75);
-  margin: 1em 0 0 1em;
-  padding: 1em 0 0 1em;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
   position: relative;
 }
 
@@ -3756,4 +3756,31 @@ p.sidebar {
   font-weight: 600;
   color: #3d4449;
   padding-right: 1em;
+}
+
+/* Default state */
+.wiggle-text,
+.wiggle-icon {
+  color: inherit;
+  display: inline-block;
+  transition: color 1s ease; /* smooth colour transition */
+}
+
+/* Hover: shocking pink + wiggle-grow */
+.wiggle-text:hover,
+.wiggle-icon:hover {
+  color: #FC0FC0; /* shocking pink */
+  animation: wiggle-grow 1.2s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+/* Wiggle + Grow keyframes */
+@keyframes wiggle-grow {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  15%      { transform: rotate(-8deg) scale(2); }
+  30%      { transform: rotate(8deg) scale(2); }
+  45%      { transform: rotate(-5deg) scale(1.8); }
+  60%      { transform: rotate(5deg) scale(1.8); }
+  75%      { transform: rotate(-2deg) scale(1.5); }
+  90%      { transform: rotate(2deg) scale(1.5); }
 }
