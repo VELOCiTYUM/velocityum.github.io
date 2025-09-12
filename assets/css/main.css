@@ -2150,18 +2150,55 @@ button,
     flex-shrink: 0;
     display: block;
     margin: 0 0 2em 4em;
-    width: 50%; }
-    #banner .image img {
+    width: 50%; 
+  }
+  #banner .image img {
+    max-height: 60vh;
+      width: 100%; 
       height: 100%;
       -moz-object-fit: cover;
       -webkit-object-fit: cover;
       -ms-object-fit: cover;
       object-fit: cover;
-      -moz-object-position: center;
-      -webkit-object-position: center;
-      -ms-object-position: center;
-      object-position: center;
-      width: 100%; }
+      /* for sizes larger than 1500px */
+      -moz-object-position: 50% 53%; 
+      -webkit-object-position: 50% 53%;
+      -ms-object-position: 50% 53%;
+      object-position: 50% 53%;
+    }
+
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  #banner .image img {
+    -moz-object-position: 50% 65%;
+    -webkit-object-position: 50% 65%;
+    -ms-object-position: 50% 65%;
+    object-position: 50% 65%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  #banner .image img {
+    -moz-object-position: 50% 55%;
+    -webkit-object-position: 50% 55%;
+    -ms-object-position: 50% 55%;
+    object-position: 50% 55%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #banner .image img {
+    /* max-height: 50vh; */
+    -moz-object-position: 50% 63%;
+    -webkit-object-position: 50% 63%;
+    -ms-object-position: 50% 63%;
+    object-position: 50% 63%;
+      width: 100%; 
+  }
+}
+
+    
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
