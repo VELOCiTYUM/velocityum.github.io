@@ -2571,6 +2571,13 @@ table th.col-narrow {
   width: 20%;
 }
 
+@media screen and (max-width: 900px) {
+  table th.col-narrow {
+    width: 13em;
+  }
+}
+
+
 /* Button */
 input[type="submit"],
 input[type="reset"],
@@ -3523,10 +3530,10 @@ button:disabled,
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
   #banner .image img {
-    -moz-object-position: 50% 55%;
-    -webkit-object-position: 50% 55%;
-    -ms-object-position: 50% 55%;
-    object-position: 50% 55%;
+    -moz-object-position: 50% 53%;
+    -webkit-object-position: 50% 53%;
+    -ms-object-position: 50% 53%;
+    object-position: 50% 53%;
     width: 100%;
   }
 }
