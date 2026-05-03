@@ -1,0 +1,6 @@
+From Feeling Secure to Verifying Security: Operationalising Trust in Post-Quantum Digital Signatures
+
+Adriano d'Alessandro
+Universita Degli Studi di Modena e Reggio Emilia
+
+Abstract: The advent of quantum computing renders it no longer sufficient to simply assume security — we must learn to verify it concretely, going beyond standard software testing and the mere perception of mathematical soundness. This talk addresses the gap between a cryptographic scheme being provably secure in theory and its remaining secure under real-world deployment conditions. Taking CRYSTALS-Dilithium (ML-DSA) — one of the recently standardised post-quantum digital signature schemes — as a case study, we explore how runtime verification techniques can be applied to monitor cryptographic implementations in execution, providing active assurance that security properties hold even in the presence of implementation flaws, misconfigurations, or adversarial interference. We argue that formal guarantees and runtime monitoring are complementary rather than competing, and that operationalising trust in post-quantum cryptography requires both.

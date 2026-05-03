@@ -1,0 +1,7 @@
+Behavioural Theories for Concurrent Actors
+
+Caroline Cucciardi
+University of Malta
+
+
+This work investigates a testing-based behavioral theory for actor-based systems, formulated as a contextual preorder for safety tests. While trace-based techniques are often used to mitigate the intractability of contextual theories, they struggle to reason about programs with an infinite number of traces. To address this limitation, we propose a coinductive characterization of our preorder. This approach enables the tractable analysis of finite-state actor systems, even in the presence of infinite trace behaviors.
